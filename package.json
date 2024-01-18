@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://CriisMi.github.io/zorzon",
+  "homepage": "https://criismi.github.io/zorzon",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
