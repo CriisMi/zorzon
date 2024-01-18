@@ -18,14 +18,18 @@ const ImageCarousel = ({ images }) => {
   };
 
   return (
-    <div>
-      <button onClick={goToPrevious}>{"<"}</button>
+    <div className="carousel">
+      <button onClick={goToPrevious}>
+        <div className="bf-button"></div>
+      </button>
       <img
         src={images[currentIndex]}
         alt="carousel"
         className="carousel-image"
       />
-      <button onClick={goToNext}>{">"}</button>
+      <button onClick={goToNext}>
+        <div className="bf-button"></div>
+      </button>
     </div>
   );
 };

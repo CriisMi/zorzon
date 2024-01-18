@@ -1,11 +1,38 @@
-.carousel-image {
-  width: 100%;
-  height: auto;
-  max-width: 300px; /* Maximum width */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (max-width: 600px) {
+/* Base style for images (mobile-first approach) */
+.carousel-image {
+  width: 100%; /* Makes the image take up the full width of its container */
+  height: auto; /* Keeps the image's aspect ratio */
+}
+
+/* Tablet: Screens wider than 768px */
+@media (min-width: 768px) {
   .carousel-image {
-    max-width: 200px; /* Smaller on mobile devices */
+    max-width: 75%; /* Reduces the image size on larger screens */
   }
+}
+
+/* Desktop: Screens wider than 992px */
+@media (min-width: 992px) {
+  .carousel-image {
+    height: 80vh;
+    width: auto; /* Further reduces the image size on even larger screens */
+  }
+}
+
+.bf-button {
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: rgb(88, 88, 88);
+}
+
+button {
+  background-color: rgba(240, 248, 255, 0);
+  border: 0;
 }

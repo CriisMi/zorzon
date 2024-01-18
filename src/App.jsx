@@ -5,14 +5,17 @@ import img2 from "/src/assets/projects-images/ZZD3_2.jpeg";
 import img3 from "/src/assets/projects-images/ZZD3_3.jpeg";
 import img4 from "/src/assets/projects-images/ZZD3_4.jpeg";
 import img5 from "/src/assets/projects-images/ZZD3_5.jpeg";
+import logo from "/src/assets/logo1.png";
 
 function App() {
   const images = [img1, img2, img3, img4, img5];
 
   return (
     <>
-      <div>ZZDesign</div>
-      <ImageCarousel images={images} />
+      <div className="homepage">
+        <img src={logo} alt="Company logo" className="logo" />
+        <ImageCarousel images={images} />
+      </div>
     </>
   );
 }
