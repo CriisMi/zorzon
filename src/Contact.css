@@ -1,3 +1,8 @@
+img {
+  width: 25px;
+  height: 25px;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -14,6 +19,24 @@
   width: 100%;
   height: auto;
   max-width: 300px; /* Maximum width */
+}
+
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+}
+
+a,
+.card {
+  display: flex;
+  align-items: center;
+}
+
+.card > a > img,
+.card > img {
+  margin-right: 10px;
 }
 
 @media (max-width: 600px) {
